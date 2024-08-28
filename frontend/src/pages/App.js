@@ -34,45 +34,50 @@ const App = () => {
   },[])
   return (
     <div className="w-screen h-screen">
-      <div className="w-full h-full overflow-auto">
+      <div className="w-full h-full overflow-auto flex flex-col">
         <Topnav />
+
         <Navbar />
-        <div className="w-full text-black bg-zinc-300 h-72">
-          <img style={{width: "100%",height: "100%"}} src={banner}/>
+
+        <div className="w-full text-black">
+          <img style={{width: "100%"}} src={banner}/>
         </div>
-        <div className="w-full px-4 py-2">
-          <div className="flex justify-between px-4"><p className="text-3xl font-bold pb-2 mt-4">Categories</p></div>
-          <div className="flex space-x-4 overflow-x-auto justify-between">
-            <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(252,235,235,1))",filter: "drop-shadow(0px 12px 24px rgba(0,0,0,0.15)"}} className="flex items-center flex-col flex-shrink-0 w-56 mb-8 h-60 py-2 rounded-3xl text-black">
-              <img style={{width: "70%",height: "85%"}} src={cat_1}/>
-              <p className="font-medium text-xl mt-1">Oversized T-Shirt</p>
-            </div>
-            <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(238,248,255,1))",filter: "drop-shadow(0px 12px 24px rgba(0,0,0,0.15)"}} className="flex items-center flex-col flex-shrink-0 w-56 mb-8 h-60 py-2 rounded-3xl text-black">
-              <img style={{width: "70%",height: "85%"}} src={cat_2}/>
-              <p className="font-medium text-xl mt-1">Full Sleeve T-Shirt</p>
-            </div>
-            <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(252,245,235,1))",filter: "drop-shadow(0px 12px 24px rgba(0,0,0,0.15)"}} className="flex items-center flex-col flex-shrink-0 w-56 mb-8 h-60 py-2 rounded-3xl text-black">
-              <img style={{width: "70%",height: "85%"}} src={cat_3}/>
-              <p className="font-medium text-xl mt-1">Joggers</p>
-            </div>
-            <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(238,246,245,1))",filter: "drop-shadow(0px 12px 24px rgba(0,0,0,0.15)"}} className="flex items-center flex-col flex-shrink-0 w-56 mb-8 h-60 py-2 rounded-3xl text-black">
-              <img style={{width: "70%",height: "85%"}} src={cat_4}/>
-              <p className="font-medium text-xl mt-1">Jackets</p>
-            </div>
-            <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(252,245,235,1))",filter: "drop-shadow(0px 12px 24px rgba(0,0,0,0.15)"}} className="flex items-center flex-col flex-shrink-0 w-56 mb-8 h-60 py-2 rounded-3xl text-black">
-              <img style={{width: "70%",height: "85%"}} src={cat_5}/>
-              <p className="font-medium text-xl mt-1">Plains</p>
-            </div>
+        <div className="w-full md:w-[90%] px-4 py-2 self-center max-w-[1400px]">
+        <div className="flex justify-between px-4"><p className="lg:text-3xl md:text-xl text-lg font-bold pb-2 mt-4">Categories</p></div>
+        <div className="flex space-x-4 overflow-x-auto justify-around">
+          <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(252,235,235,1))"}} className="flex items-center flex-col flex-shrink-0 h-40 w-32 mb-8 sm:h-60 sm:w-56 py-2 rounded-3xl text-black">
+            <img style={{width: "70%",height: "85%"}} src={cat_1}/>
+            <p className="font-medium text-sm sm:text-xl mt-1">Oversized T-Shirt</p>
+          </div>
+          <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(238,248,255,1))"}} className="flex items-center flex-col flex-shrink-0 h-40 w-32 mb-8 sm:h-60 sm:w-56 py-2 rounded-3xl text-black">
+            <img style={{width: "70%",height: "85%"}} src={cat_2}/>
+            <p className="font-medium text-sm sm:text-xl mt-1">Full Sleeve T-Shirt</p>
+          </div>
+          <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(252,245,235,1))"}} className="flex items-center flex-col flex-shrink-0 h-40 w-32 mb-8 sm:h-60 sm:w-56 py-2 rounded-3xl text-black">
+            <img style={{width: "70%",height: "85%"}} src={cat_3}/>
+            <p className="font-medium text-sm sm:text-xl mt-1">Joggers</p>
+          </div>
+          <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(238,246,245,1))"}} className="flex items-center flex-col flex-shrink-0 h-40 w-32 mb-8 sm:h-60 sm:w-56 py-2 rounded-3xl text-black">
+            <img style={{width: "70%",height: "85%"}} src={cat_4}/>
+            <p className="font-medium text-sm sm:text-xl mt-1">Jackets</p>
+          </div>
+          <div style={{backgroundImage: "linear-gradient(rgba(255,255,255,1), rgba(252,245,235,1))"}} className="flex items-center flex-col flex-shrink-0 h-40 w-32 mb-8 sm:h-60 sm:w-56 py-2 rounded-3xl text-black">
+            <img style={{width: "70%",height: "85%"}} src={cat_5}/>
+            <p className="font-medium text-sm sm:text-xl mt-1">Plains</p>
           </div>
         </div>
-        <section className="bg-black flex flex-grow items-center justify-between h-28 mb-6 py-4 px-20">
-          <img style={{height: "100%"}} src={sevenDay}/>
-          <img style={{height: "100%"}} src={indianBrand}/>
-          <img style={{height: "100%"}} src={cod}/>
-        </section>  
-        <div className="w-full px-4 py-2">
-          <div className="flex justify-between px-4 mb-2"><p className="text-3xl font-bold">Shop The Latest</p><button className="bg-black hover:bg-zinc-800 text-white rounded-md my-1 px-5 py-1 text-lg">View All</button></div>
-          <div className="flex space-x-4 overflow-x-auto justify-between">
+      </div>
+        
+        <section className="bg-black flex flex-grow items-center justify-between gap-4 md:gap-0 md:h-28 h-[3.75rem] mb-6 py-4 px-20 w-[100%]">
+          <img className="h-full" src={sevenDay}/>
+          <img className="h-full" src={indianBrand}/>
+          <img className="h-full" src={cod}/>
+        </section>
+        
+        
+        <div className="w-full md:w-[90%] px-4 py-2 self-center max-w-[1400px]">
+          <div className="flex justify-between items-center px-4 mb-2"><p className="lg:text-3xl md:text-xl text-sm font-bold">Shop The Latest</p><button className="bg-black hover:bg-zinc-800 text-white rounded-md my-1 px-5 py-1 md:text-lg text-sm">View All</button></div>
+          <div className="flex space-x-4 overflow-x-auto justify-around">
             {
               latest.map((item)=>{
                 return <Card name={item.name} image={item} discountedPrice={item.discountedPrice} originalPrice={item.originalPrice}/>
@@ -80,9 +85,11 @@ const App = () => {
             }
           </div>
         </div>
-        <div className="w-full px-4 py-2 mt-1">
-          <div className="flex justify-between px-4 mb-3"><p className="text-3xl font-bold">Anime Store</p><button className="bg-black hover:bg-zinc-800 text-white rounded-lg my-1 px-5 py-1 text-lg">View All</button></div>
-          <div className="flex space-x-4 overflow-x-auto justify-between">
+
+
+        <div className="w-full md:w-[90%] px-4 py-2 self-center mt-1 max-w-[1400px]">
+          <div className="flex justify-between items-center px-4 mb-3"><p className="lg:text-3xl md:text-xl text-sm font-bold">Anime Store</p><button className="bg-black hover:bg-zinc-800 text-white rounded-lg my-1 px-5 py-1 md:text-lg text-sm">View All</button></div>
+          <div className="flex space-x-4 overflow-x-auto justify-around">
             {
               anime.map((item)=>{
                 return <Card name={item.name} image={item} discountedPrice={item.discountedPrice} originalPrice={item.originalPrice}/>
@@ -90,13 +97,20 @@ const App = () => {
             }
           </div>
         </div>
-        <section className="flex items-center justify-between h-16 mb-4">
-          <div className="w-full h-full text-white text-center flex items-center justify-center bg-black" style={{fontSize: "1.4rem"}}>Homegrown Indian Brand</div>
-          <div className="w-full h-full text-black text-center flex items-center justify-center text-2xl bg-white border-2 border-black" style={{fontSize: "1.rem"}}>Over <span className="font-bold px-2">1Million</span> Smiles Delivered <span className="ml-2" style={{marginTop: "2px"}}><img style={{height: "1.6rem", marginTop: "1px"}} src={smile} /></span></div>
+
+
+        <section className="flex items-center justify-between h-10 md:h-16 mb-8 sm:mb-4 flex-wrap">
+          <div className="sm:w-[50%] w-full h-full text-white text-center flex items-center justify-center bg-black text-[0.7rem] md:text-[1.4rem]">Homegrown Indian Brand</div>
+          <div className="sm:w-[50%] w-full h-full text-black text-center flex items-center justify-center text-2xl bg-white border-2 border-black text-[0.7rem] md:text-[1.4rem]">Over <span className="font-bold px-2">1Million</span> Smiles Delivered <span className="ml-2" style={{marginTop: "2px"}}><img className="h-[0.7rem] md:h-[1.4rem] " src={smile} /></span></div>
         </section>
-        <div className="w-full px-4 py-2">
-          <div className="flex justify-between px-4 my-2"><p className="text-3xl font-bold">Jackets & Hoods</p><button className="bg-black hover:bg-zinc-800 text-white rounded-lg my-1 px-5 py-1 text-lg">View All</button></div>
-          <div className="flex space-x-4 overflow-x-auto justify-between">
+
+
+        <div className="w-full md:w-[90%] px-4 py-2 self-center max-w-[1400px]">
+          <div className="flex justify-between px-4 my-2 items-center">
+            <p className="lg:text-3xl md:text-xl text-sm font-bold">Jackets & Hoods</p>
+            <button className="bg-black hover:bg-zinc-800 text-white rounded-lg my-1 px-5 py-1 md:text-lg text-sm">View All</button>
+          </div>
+          <div className="flex space-x-4 overflow-x-auto justify-around">
             {
               jacket.map((item)=>{
                 return <Card name={item.name} image={item} discountedPrice={item.discountedPrice} originalPrice={item.originalPrice}/>
@@ -104,7 +118,9 @@ const App = () => {
             }
           </div>
         </div>
+
         <Footer />
+
       </div>
     </div>
   );
