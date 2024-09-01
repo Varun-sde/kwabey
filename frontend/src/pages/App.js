@@ -10,7 +10,7 @@ import cat_5 from "../images/cat_5.png"
 import sevenDay from "../images/seven-day.png"
 import indianBrand from "../images/indian_brand.png"
 import cod from "../images/cod_available.png"
-import banner from "../images/banner.png"
+import banner from "../images/banner 1.png"
 import smile from "../images/smile.png"
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";

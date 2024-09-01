@@ -5,6 +5,7 @@ import App from './pages/App';
 import Product from './pages/Product';
 import Upload from './pages/Upload';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Payment from './pages/Payment';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
             <Route path='/' Component={App}/>
             <Route path='/product' Component={Product}/>
             <Route path='/upload' Component={Upload}/>
+            <Route path='/payment' Component={Payment}/>
         </Routes>
     </Router>
 );
